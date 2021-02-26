@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/mk-portfolio/static/css/main.e1c9b4ed.chunk.css",
-    "main.js": "/mk-portfolio/static/js/main.1e491a23.chunk.js",
-    "main.js.map": "/mk-portfolio/static/js/main.1e491a23.chunk.js.map",
-    "runtime-main.js": "/mk-portfolio/static/js/runtime-main.84590501.js",
-    "runtime-main.js.map": "/mk-portfolio/static/js/runtime-main.84590501.js.map",
+    "main.css": "/mk-portfolio/static/css/main.f314db88.chunk.css",
+    "main.js": "/mk-portfolio/static/js/main.f458ba9d.chunk.js",
+    "main.js.map": "/mk-portfolio/static/js/main.f458ba9d.chunk.js.map",
+    "runtime-main.js": "/mk-portfolio/static/js/runtime-main.07d48634.js",
+    "runtime-main.js.map": "/mk-portfolio/static/js/runtime-main.07d48634.js.map",
     "static/css/2.19cefda3.chunk.css": "/mk-portfolio/static/css/2.19cefda3.chunk.css",
-    "static/js/2.1ba3215c.chunk.js": "/mk-portfolio/static/js/2.1ba3215c.chunk.js",
-    "static/js/2.1ba3215c.chunk.js.map": "/mk-portfolio/static/js/2.1ba3215c.chunk.js.map",
-    "static/js/3.fdedaaa1.chunk.js": "/mk-portfolio/static/js/3.fdedaaa1.chunk.js",
-    "static/js/3.fdedaaa1.chunk.js.map": "/mk-portfolio/static/js/3.fdedaaa1.chunk.js.map",
+    "static/js/2.862916ab.chunk.js": "/mk-portfolio/static/js/2.862916ab.chunk.js",
+    "static/js/2.862916ab.chunk.js.map": "/mk-portfolio/static/js/2.862916ab.chunk.js.map",
+    "static/js/3.c7884f94.chunk.js": "/mk-portfolio/static/js/3.c7884f94.chunk.js",
+    "static/js/3.c7884f94.chunk.js.map": "/mk-portfolio/static/js/3.c7884f94.chunk.js.map",
     "index.html": "/mk-portfolio/index.html",
     "static/css/2.19cefda3.chunk.css.map": "/mk-portfolio/static/css/2.19cefda3.chunk.css.map",
-    "static/css/main.e1c9b4ed.chunk.css.map": "/mk-portfolio/static/css/main.e1c9b4ed.chunk.css.map",
-    "static/js/2.1ba3215c.chunk.js.LICENSE.txt": "/mk-portfolio/static/js/2.1ba3215c.chunk.js.LICENSE.txt",
+    "static/css/main.f314db88.chunk.css.map": "/mk-portfolio/static/css/main.f314db88.chunk.css.map",
+    "static/js/2.862916ab.chunk.js.LICENSE.txt": "/mk-portfolio/static/js/2.862916ab.chunk.js.LICENSE.txt",
     "static/media/AddBookShelf.23ab7fa4.PNG": "/mk-portfolio/static/media/AddBookShelf.23ab7fa4.PNG",
     "static/media/Admin.f85edb54.PNG": "/mk-portfolio/static/media/Admin.f85edb54.PNG",
     "static/media/BookStore.d58c60e0.PNG": "/mk-portfolio/static/media/BookStore.d58c60e0.PNG",
@@ -35,7 +35,7 @@
     "static/media/UBookshelf2.3433b0f7.PNG": "/mk-portfolio/static/media/UBookshelf2.3433b0f7.PNG",
     "static/media/UBookshelf3.4269def1.PNG": "/mk-portfolio/static/media/UBookshelf3.4269def1.PNG",
     "static/media/about.20820325.md": "/mk-portfolio/static/media/about.20820325.md",
-    "static/media/about.md": "/mk-portfolio/static/media/about.b5886ce4.md",
+    "static/media/about.md": "/mk-portfolio/static/media/about.df479397.md",
     "static/media/App.css": "/mk-portfolio/static/media/background.a1a3afac.jpg",
     "static/media/calendar1.a66ab10b.png": "/mk-portfolio/static/media/calendar1.a66ab10b.png",
     "static/media/calendar2.145007f6.png": "/mk-portfolio/static/media/calendar2.145007f6.png",
@@ -44,10 +44,10 @@
     "static/media/profile.a0cec62a.jpg": "/mk-portfolio/static/media/profile.a0cec62a.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.84590501.js",
+    "static/js/runtime-main.07d48634.js",
     "static/css/2.19cefda3.chunk.css",
-    "static/js/2.1ba3215c.chunk.js",
-    "static/css/main.e1c9b4ed.chunk.css",
-    "static/js/main.1e491a23.chunk.js"
+    "static/js/2.862916ab.chunk.js",
+    "static/css/main.f314db88.chunk.css",
+    "static/js/main.f458ba9d.chunk.js"
   ]
 }
