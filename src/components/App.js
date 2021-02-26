@@ -1,5 +1,5 @@
 import Profile from './Profile'
-import Navigation2 from './Navigation2'
+import Navigation from './Navigation'
 import About from './About'
 import Experience from './Experience'
 import MyProjects from './MyProjects'
@@ -20,7 +20,7 @@ function App() {
       <ScrollingProvider scrollBehavior="smooth"> 
     <div>
       
-      <Navigation2/>
+      <Navigation/>
      
     </div>
     <div className="contentContainer">

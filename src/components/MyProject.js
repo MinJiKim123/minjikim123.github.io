@@ -4,6 +4,7 @@ import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import ReactMarkdown from 'react-markdown';
 import * as Icon from 'react-bootstrap-icons';
+import MediaQuery, { useMediaQuery } from 'react-responsive'
 
 
 function MyProject(props) {
@@ -12,6 +13,7 @@ function MyProject(props) {
     const gitlink = props.gitlink;
     const [markdown, setMarkdown] = useState(null);
     const [open, setOpen] = useState(false);
+    
     
     
     useEffect(() => {
@@ -25,19 +27,32 @@ function MyProject(props) {
             
         })
     },[]);
+    const isMobileOrTablet = useMediaQuery({query:'(max-width: 1000px'});
     const closeModal = () => setOpen(false);
     return (
-        <div className = "subDiv">
+        <div>
             <div className="prjimg">
-            <button onClick={() => setOpen(o => !o)}> <img src={images[0].url} alt="alt image" className="pimg-thumbnail"></img></button>   
-            <Popup open={open} closeOnDocumentClick onClose={closeModal} >    
+            
+            
+            <button onClick={!isMobileOrTablet ? () => setOpen(o => !o): null} className="prjbtn">  
+            <img src={images[0].url} alt="alt image" className="pimg-thumbnail"></img>
+            <div className="overlay">
+            <p className="prjimg-smaller">
+                <ReactMarkdown source={markdown} />
+                <a href={gitlink} ><Icon.BoxArrowUpRight className="git-ic-smaller" /></a> 
+            </p>
+            </div>
+            
+            </button>  
+            
+            <Popup open={open} closeOnDocumentClick onClose={closeModal}>    
+           
             <div>  
             <a className="close" onClick={closeModal}>
                 &times;
             </a>    
             <SimpleImageSlider
-                style={{color: 'black', margin: 'auto'}}
-                width={650}
+                width='95%'
                 height={355}
                 images={images}
                 showBullets={true}
@@ -54,6 +69,7 @@ function MyProject(props) {
                 <a href={gitlink} style={{color: "aliceblue"}}><Icon.BoxArrowUpRight size={20} /></a> 
                 </div>
             </div>
+           
            
         </div>
     )

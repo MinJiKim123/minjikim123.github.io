@@ -1,5 +1,6 @@
 import React, {useState,useEffect}from 'react';
 import StarRatings from 'react-star-ratings'
+import MediaQuery, { useMediaQuery } from 'react-responsive'
 
 function Skills(props) {
     const skills = props.skills;
@@ -29,12 +30,14 @@ function Skills(props) {
         }       
     },[]);
     
+    const isDesktop = useMediaQuery({query:'(min-width: 1040px'});
+    
     return (
         <div className="div-abil">
           <strong> Skills</strong>   
-            <div className="row" style={{marginLeft:'20px'}}>
-                <div className="col-sm-6">        
-                    <table>
+            <div className={isDesktop ? "row" : "skills-sec"}>
+                <div className={isDesktop ? "col-sm-6" : null}>        
+                    <table style={{width:'100%'}}>
                         <tbody>
                         {firstArr.map((value,index) => {
                             return (
@@ -44,11 +47,9 @@ function Skills(props) {
                                     <StarRatings
                                         rating={value.rating}
                                         starRatedColor="#feb236"
-                                        //changeRating={this.changeRating}
                                         numberOfStars={5}
-                                        //name='rating'
-                                        starDimension="20px"
-                                        starSpacing="5px"
+                                        starDimension="15px"
+                                        starSpacing="3px"
                                     />
                                     </td>
                                 </tr>
@@ -57,8 +58,8 @@ function Skills(props) {
                         </tbody>
                     </table>
                 </div>
-                <div className="col-sm-6">
-                    {secondArr.length != 0 ?  <table>
+                <div className={isDesktop ? "col-sm-6" : null}>
+                    {secondArr.length != 0 ?  <table style={{width:'100%'}}>
                         {secondArr.map((value,index) => {
                             return (
                                 <tr key={index} className="tr-skills">
@@ -67,11 +68,9 @@ function Skills(props) {
                                     <StarRatings
                                         rating={value.rating}
                                         starRatedColor="#feb236"
-                                        //changeRating={this.changeRating}
                                         numberOfStars={5}
-                                        //name='rating'
-                                        starDimension="20px"
-                                        starSpacing="5px"
+                                        starDimension="15px"
+                                        starSpacing="3px"
                                     />
                                     </td>
                                 </tr>

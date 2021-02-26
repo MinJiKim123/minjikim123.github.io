@@ -28,6 +28,7 @@ function Tools(props) {
             a=4;    
         }  
     },[]);
+  
 
     return(
         <div className="div-abil">
@@ -37,12 +38,12 @@ function Tools(props) {
                     <ul>
                         {firstArr.map((value,index) => {
                             return(
-                                <li key={index}>{value}</li>
+                                <li key={index} >{value}</li>
                                )
                         })}
                     </ul>
                 </div>
-                <div className="col-sm-6">
+                <div className="col-sm-6" >
                    {secondArr.length != 0 ? <ul>
                        {secondArr.map((value,index) => {
                            return(

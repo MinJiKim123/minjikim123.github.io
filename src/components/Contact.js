@@ -12,24 +12,29 @@ function Contact() {
     return(
         <div className="contact-div">
             <h2>Contact</h2>
-            <div>
-                <div style={{textAlign:"center", margin: "10px", color: "white"}}>
-                <Icon.EnvelopeFill size = {30} className="contact-ic"/> {email} &nbsp;&nbsp; | &nbsp;&nbsp;{email2}
+            <div >
+                <div className="contact-div-title">
+                <Icon.EnvelopeFill size = {30} className="contact-ic"/> {email} &nbsp;&nbsp; <p className="email-tabmob">| &nbsp;&nbsp;{email2}</p>
                 </div>
-                <table>
+                
+                <table >
                     <tbody>
                         <tr >
-                            <td className="contact-td"><a href={linkedin}><Icon.Linkedin size={30} className="contact-ic"/> {linkedin} </a></td>
-                            <td className="contact-td"><a href={github}><Icon.Github size={30} className="contact-ic"/> {github}</a></td>
+                            <td className="contact-td"><a href={linkedin}><Icon.Linkedin size={30} className="contact-ic"/><p className="email-tabmob">{linkedin}</p></a></td>
+                            <td className="contact-td"><a href={github}><Icon.Github size={30} className="contact-ic"/><p className="email-tabmob">{github}</p></a></td> 
+                            <td className="newrow contact-td "><a href={facebook}><Icon.Facebook size={30} className="contact-ic"/><p className="email-tabmob">{facebook}</p></a></td>
+                            <td className="newrow contact-td "><a href={instagram}><Icon.Instagram size={30} className="contact-ic"/><p className="email-tabmob">{instagram}</p></a></td>
                         </tr>
-                        <tr>
-                            <td className="contact-td"><a href={facebook}><Icon.Facebook size={30} className="contact-ic"/> {facebook}</a></td>
-                            <td className="contact-td"><a href={instagram}><Icon.Instagram size={30} className="contact-ic"/> {instagram}</a></td>
+                        <tr className="secondrow-tabmob">
+                            <td className="contact-td"><a href={facebook}><Icon.Facebook size={30} className="contact-ic"/><p className="email-tabmob">{facebook}</p></a></td>
+                            <td className="contact-td"><a href={instagram}><Icon.Instagram size={30} className="contact-ic"/><p className="email-tabmob">{instagram}</p></a></td> 
                         </tr>
+                       
 
                     </tbody>
 
                 </table>
+                <p className="contact-div-footer">Say Hi! <Icon.EmojiSmileFill/></p>
               
             </div>
             
