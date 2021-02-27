@@ -1,6 +1,5 @@
 import React, {useState,useEffect}from 'react';
 import StarRatings from 'react-star-ratings'
-import MediaQuery, { useMediaQuery } from 'react-responsive'
 
 function Skills(props) {
     const skills = props.skills;
@@ -30,13 +29,12 @@ function Skills(props) {
         }       
     },[]);
     
-    const isDesktop = useMediaQuery({query:'(min-width: 1040px'});
     
     return (
         <div className="div-abil">
           <strong> Skills</strong>   
-            <div className={isDesktop ? "row" : "skills-sec"}>
-                <div className={isDesktop ? "col-sm-6" : null}>        
+            <div className="grid-container">
+                <div className="grid-item">        
                     <table style={{width:'100%'}}>
                         <tbody>
                         {firstArr.map((value,index) => {
@@ -58,7 +56,7 @@ function Skills(props) {
                         </tbody>
                     </table>
                 </div>
-                <div className={isDesktop ? "col-sm-6" : null}>
+                <div className="grid-item">
                     {secondArr.length != 0 ?  <table style={{width:'100%'}}>
                         {secondArr.map((value,index) => {
                             return (
@@ -71,6 +69,7 @@ function Skills(props) {
                                         numberOfStars={5}
                                         starDimension="15px"
                                         starSpacing="3px"
+                                        
                                     />
                                     </td>
                                 </tr>

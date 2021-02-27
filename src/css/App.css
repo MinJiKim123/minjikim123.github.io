@@ -72,13 +72,8 @@
   width: 35%;
   justify-content: center;
   align-content: center;
-  
 }
-.aboutimg-mob {
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-}
+
 
 
 .pimg {
@@ -107,6 +102,9 @@
   overflow: auto;
   border-radius: 12px;
   border:none;
+}
+.prj-mobile-v {
+  display: none;
 }
 strong {
   color:black;
@@ -458,9 +456,52 @@ option:hover {
   
   display: none;
 }
+.ex-mobile-v {
+  display: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+ 
+}
+
+
 
 
 @media (max-width: 1000px) {
+  .grid-container {
+    display: inline-block;
+    width: 100%;
+  }
+  .ex-desktop-v {
+    display: none;
+  }
+  .ex-mobile-v {
+    display: inline-block;
+  }
+  .prj-desktop-v {
+    display: none;
+  }
+  .prj-mobile-v {
+    display: inline-block;
+  }
+  .aboutdesc {
+    width: 100%;
+    font-size: small;
+    color: dimgray;
+  }
+  
+  .aboutimg {
+    
+    text-align: center;
+
+    float: none;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    
+  }
   
   .prjdesc {
     display: none;
@@ -647,6 +688,19 @@ option:hover {
     font-size: small;
   }
  
+}
+@media (max-width: 370px) {
+  .prjimg-smaller {
+    font-size: 2vw;
+  }
+  .td-skills-name {
+    font-size: smaller;
+    width: 55%;
+  }
+  .header-nav {
+    font-size: large;
+  }
+
 }
 
 

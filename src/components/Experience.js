@@ -1,19 +1,16 @@
 import React from 'react'
 import Tabs from "./Tabs"
 import * as Icon from 'react-bootstrap-icons';
-import MediaQuery, { useMediaQuery } from 'react-responsive'
 
 
 function Experience(){
 
-    const isMobileOrTablet = useMediaQuery({query:'(max-width: 1000px'});
-    const isDesktop = useMediaQuery({query:'(min-width: 1000px'});
     return(
         <div className="subdiv subdiv-add-ex">
             <h6><Icon.BriefcaseFill size={20} color="gray"/> PROFESSIONAL EXPERIENCE</h6>
             <hr/>
-            {isDesktop && 
-                    <div>
+           
+                    <div className="ex-desktop-v">
                     <Tabs>
                         <div label = "Zenith I &amp; T">
                             
@@ -60,9 +57,9 @@ function Experience(){
                         </div>
                     </Tabs>
                 </div>
-            }
-            {isMobileOrTablet &&
-                <div>
+            
+           
+                <div className="ex-mobile-v">
                     <div>
                             <h5 style={{color:'dimgray'}}>Zenith I &amp; T</h5>
                             <strong>Software Developer</strong>  
@@ -109,7 +106,7 @@ function Experience(){
                     
                     
                 </div>
-            }
+            
                         
         </div>
     )

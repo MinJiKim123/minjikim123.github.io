@@ -4,7 +4,6 @@ import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import ReactMarkdown from 'react-markdown';
 import * as Icon from 'react-bootstrap-icons';
-import MediaQuery, { useMediaQuery } from 'react-responsive'
 
 
 function MyProject(props) {
@@ -27,14 +26,13 @@ function MyProject(props) {
             
         })
     },[]);
-    const isMobileOrTablet = useMediaQuery({query:'(max-width: 1000px'});
     const closeModal = () => setOpen(false);
     return (
         <div>
             <div className="prjimg">
             
-            
-            <button onClick={!isMobileOrTablet ? () => setOpen(o => !o): null} className="prjbtn">  
+            <div className="prj-desktop-v">
+            <button onClick={() => setOpen(o => !o)} className="prjbtn">  
             <img src={images[0].url} alt="alt image" className="pimg-thumbnail"></img>
             <div className="overlay">
             <p className="prjimg-smaller">
@@ -42,8 +40,19 @@ function MyProject(props) {
                 <a href={gitlink} ><Icon.BoxArrowUpRight className="git-ic-smaller" /></a> 
             </p>
             </div>
-            
             </button>  
+            </div>
+            <div className="prj-mobile-v">
+            <button className="prjbtn">  
+            <img src={images[0].url} alt="alt image" className="pimg-thumbnail"></img>
+            <div className="overlay">
+            <p className="prjimg-smaller">
+                <ReactMarkdown source={markdown} />
+                <a href={gitlink} ><Icon.BoxArrowUpRight className="git-ic-smaller" /></a> 
+            </p>
+            </div>
+            </button>  
+            </div>
             
             <Popup open={open} closeOnDocumentClick onClose={closeModal}>    
            
