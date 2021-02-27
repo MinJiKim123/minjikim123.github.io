@@ -22,8 +22,8 @@ function Contact() {
                         <tr >
                             <td className="contact-td"><a href={linkedin}><Icon.Linkedin size={30} className="contact-ic"/><p className="email-tabmob">{linkedin}</p></a></td>
                             <td className="contact-td"><a href={github}><Icon.Github size={30} className="contact-ic"/><p className="email-tabmob">{github}</p></a></td> 
-                            <td className="newrow contact-td "><a href={facebook}><Icon.Facebook size={30} className="contact-ic"/><p className="email-tabmob">{facebook}</p></a></td>
-                            <td className="newrow contact-td "><a href={instagram}><Icon.Instagram size={30} className="contact-ic"/><p className="email-tabmob">{instagram}</p></a></td>
+                            <td className="newrow contact-td " ><a href={facebook} ><Icon.Facebook size={30} className="contact-ic"/></a></td>
+                            <td className="newrow contact-td "><a href={instagram}><Icon.Instagram size={30} className="contact-ic"/></a></td>
                         </tr>
                         <tr className="secondrow-tabmob">
                             <td className="contact-td"><a href={facebook}><Icon.Facebook size={30} className="contact-ic"/><p className="email-tabmob">{facebook}</p></a></td>
