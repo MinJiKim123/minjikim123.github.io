@@ -3,7 +3,7 @@ import {useScrollSection} from 'react-scroll-section';
 import useDocumentScrollThrottled from './useDocumentScrollThrottled';
 import * as Icon from 'react-bootstrap-icons';
 
-function Navigation2() {
+function Navigation() {
 
   const [shouldHideHeader, setShouldHideHeader] = useState(false);
   const [shouldShowShadow, setShouldShowShadow] = useState(false);
@@ -50,7 +50,6 @@ function Navigation2() {
     }
     const prfOnClick = () => {
       profileSection.onClick();
-      setClick(false);
     }
     const abilOnClick = () => {
       abilitiesSection.onClick();
@@ -59,7 +58,7 @@ function Navigation2() {
     const cntOnClick = () => {
       contactSection.onClick();
       setClick(false);
-    }
+    } 
    
     return (
      
@@ -75,10 +74,10 @@ function Navigation2() {
                   <li onClick={expOnClick} selected={experienceSection.selected} className="li-nav">
                   <a href="#experience"> Experience</a>
                   </li>
-                  <li onClick={prjOnClick} selected={projectSection.selected} className="li-nav">
+                  <li onClick={ prjOnClick} selected={projectSection.selected} className="li-nav">
                   <a href="#projects"> Projects</a>
                   </li>
-                  <li onClick={abilOnClick} selected={abilitiesSection.selected} className="li-nav">
+                  <li onClick={ abilOnClick} selected={abilitiesSection.selected} className="li-nav">
                   <a href="#abilities"> Abilities</a>
                   </li>
                   <li onClick={cntOnClick} selected={contactSection.selected} className="li-nav">
@@ -98,4 +97,4 @@ function Navigation2() {
         
     );
 }
-export default Navigation2;
+export default Navigation;

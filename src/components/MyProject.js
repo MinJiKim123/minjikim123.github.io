@@ -31,47 +31,43 @@ function MyProject(props) {
         <div>
             <div className="prjimg">
             
-            <div className="prj-desktop-v">
-            <button onClick={() => setOpen(o => !o)} className="prjbtn">  
-            <img src={images[0].url} alt="alt image" className="pimg-thumbnail"></img>
-            <div className="overlay">
-            <p className="prjimg-smaller">
-                <ReactMarkdown source={markdown} />
-                <a href={gitlink} ><Icon.BoxArrowUpRight className="git-ic-smaller" /></a> 
-            </p>
-            </div>
-            </button>  
-            </div>
-            <div className="prj-mobile-v">
-            <button className="prjbtn">  
-            <img src={images[0].url} alt="alt image" className="pimg-thumbnail"></img>
-            <div className="overlay">
-            <p className="prjimg-smaller">
-                <ReactMarkdown source={markdown} />
-                <a href={gitlink} ><Icon.BoxArrowUpRight className="git-ic-smaller" /></a> 
-            </p>
-            </div>
-            </button>  
-            </div>
+                <div className="prj-desktop-v">
+                    <button onClick={() => setOpen(o => !o)} className="prjbtn">  
+                        <img src={images[0].url} alt="alt image" className="pimg-thumbnail"></img>
+                        
+                    </button>  
+                </div>
+
+                <div className="prj-mobile-v">
+                    <button className="prjbtn">  
+                        <img src={images[0].url} alt="alt image" className="pimg-thumbnail"></img>
+                        <div className="overlay">
+                        <p className="prjimg-smaller">
+                            <ReactMarkdown source={markdown} />
+                            <a href={gitlink} ><Icon.BoxArrowUpRight className="git-ic-smaller" /></a> 
+                        </p>
+                        </div>
+                    </button>  
+                </div>
             
-            <Popup open={open} closeOnDocumentClick onClose={closeModal}>    
-           
-            <div>  
-            <a className="close" onClick={closeModal}>
-                &times;
-            </a>    
-            <SimpleImageSlider
-                width='95%'
-                height={355}
-                images={images}
-                showBullets={true}
-                showNavs={true}
-                useGPURender={true}
-                navStyle={1}
-             /> 
-             </div>
-             </Popup>
+                <Popup open={open} closeOnDocumentClick onClose={closeModal}>    
+                    <div>  
+                        <a className="close" onClick={closeModal}>
+                            &times;
+                        </a>    
+                        <SimpleImageSlider
+                            width='95%'
+                            height={355}
+                            images={images}
+                            showBullets={true}
+                            showNavs={true}
+                            useGPURender={true}
+                            navStyle={1}
+                        /> 
+                    </div>
+                </Popup>
             </div>
+
             <div className="prjdesc">
                 <ReactMarkdown source={markdown}/>
                 <div className="git-ic-link">

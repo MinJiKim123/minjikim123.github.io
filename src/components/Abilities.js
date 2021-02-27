@@ -9,14 +9,14 @@ function Abilities() {
         {name: "OOP", rating: 5},
         {name: "C#", rating: 5},
         {name: "WPF", rating: 5},
+        {name: "SQL (MySQL, SQL Server)", rating: 5},
         {name: "HTML", rating: 5},
+        {name: "ASP.NET", rating: 4.5},
         {name: "Java", rating: 4},
-        {name: "SQL (MySQL, SQL Server)", rating: 4},
         {name: ".NET", rating: 4},
-        {name: "ASP.NET", rating: 4},
         {name: "NoSQL", rating: 4},
-        {name: "React.Js", rating: 3},
-        {name: "Node.Js", rating: 3},
+        {name: "React.Js", rating: 4},
+        {name: "Node.Js", rating: 4},
         
         
     ];

@@ -19,12 +19,6 @@
   color: white;
 }
 
-.contentContainer::after {
-  
-  position:absolute;
-  z-index: -1;
-  
-}
 .contentContainer {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
   padding-left: 10%;
@@ -99,12 +93,40 @@
   font-size: small;
 }
 .prjbtn {
-  overflow: auto;
+ 
   border-radius: 12px;
   border:none;
+ 
 }
+
 .prj-mobile-v {
   display: none;
+}
+.prjimg-smaller {
+  color: dimgray;
+  font-size: 20px;
+  position: absolute;
+  top:50%;
+  left: 45%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left;
+  font-size: small;
+  
+}
+.overlay {
+  
+  transition: .5s ease;
+  opacity: 0;
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  
 }
 strong {
   color:black;
@@ -416,31 +438,7 @@ hr {
 option:hover {
   color: white;
 }
-.prjimg-smaller {
-  color: dimgray;
-  font-size: 20px;
-  position: absolute;
-  top:50%;
-  left: 45%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: left;
-  font-size: small;
-  
-}
-.overlay {
-  
-  transition: .5s ease;
-  opacity: 0;
-  position:absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-}
+
 .git-ic-smaller {
   font-size: large;
 }
@@ -486,6 +484,10 @@ option:hover {
   .prj-mobile-v {
     display: inline-block;
   }
+  .prjbtn {
+    position: relative;
+   
+  }
   .aboutdesc {
     width: 100%;
     font-size: small;
@@ -514,10 +516,7 @@ option:hover {
     transition: .5s ease;
   }
  
-  .prjbtn {
-    position: relative;
-    
-  }
+
   .prjbtn:hover .pimg-thumbnail {  
       opacity: 0.2;
   }
