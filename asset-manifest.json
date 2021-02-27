@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/mk-portfolio/static/css/main.f314db88.chunk.css",
-    "main.js": "/mk-portfolio/static/js/main.f458ba9d.chunk.js",
-    "main.js.map": "/mk-portfolio/static/js/main.f458ba9d.chunk.js.map",
-    "runtime-main.js": "/mk-portfolio/static/js/runtime-main.07d48634.js",
-    "runtime-main.js.map": "/mk-portfolio/static/js/runtime-main.07d48634.js.map",
+    "main.css": "/mk-portfolio/static/css/main.50b26760.chunk.css",
+    "main.js": "/mk-portfolio/static/js/main.36a48d85.chunk.js",
+    "main.js.map": "/mk-portfolio/static/js/main.36a48d85.chunk.js.map",
+    "runtime-main.js": "/mk-portfolio/static/js/runtime-main.24303b72.js",
+    "runtime-main.js.map": "/mk-portfolio/static/js/runtime-main.24303b72.js.map",
     "static/css/2.19cefda3.chunk.css": "/mk-portfolio/static/css/2.19cefda3.chunk.css",
-    "static/js/2.862916ab.chunk.js": "/mk-portfolio/static/js/2.862916ab.chunk.js",
-    "static/js/2.862916ab.chunk.js.map": "/mk-portfolio/static/js/2.862916ab.chunk.js.map",
-    "static/js/3.c7884f94.chunk.js": "/mk-portfolio/static/js/3.c7884f94.chunk.js",
-    "static/js/3.c7884f94.chunk.js.map": "/mk-portfolio/static/js/3.c7884f94.chunk.js.map",
+    "static/js/2.b33b2000.chunk.js": "/mk-portfolio/static/js/2.b33b2000.chunk.js",
+    "static/js/2.b33b2000.chunk.js.map": "/mk-portfolio/static/js/2.b33b2000.chunk.js.map",
+    "static/js/3.db01034f.chunk.js": "/mk-portfolio/static/js/3.db01034f.chunk.js",
+    "static/js/3.db01034f.chunk.js.map": "/mk-portfolio/static/js/3.db01034f.chunk.js.map",
     "index.html": "/mk-portfolio/index.html",
     "static/css/2.19cefda3.chunk.css.map": "/mk-portfolio/static/css/2.19cefda3.chunk.css.map",
-    "static/css/main.f314db88.chunk.css.map": "/mk-portfolio/static/css/main.f314db88.chunk.css.map",
-    "static/js/2.862916ab.chunk.js.LICENSE.txt": "/mk-portfolio/static/js/2.862916ab.chunk.js.LICENSE.txt",
+    "static/css/main.50b26760.chunk.css.map": "/mk-portfolio/static/css/main.50b26760.chunk.css.map",
+    "static/js/2.b33b2000.chunk.js.LICENSE.txt": "/mk-portfolio/static/js/2.b33b2000.chunk.js.LICENSE.txt",
     "static/media/AddBookShelf.23ab7fa4.PNG": "/mk-portfolio/static/media/AddBookShelf.23ab7fa4.PNG",
     "static/media/Admin.f85edb54.PNG": "/mk-portfolio/static/media/Admin.f85edb54.PNG",
     "static/media/BookStore.d58c60e0.PNG": "/mk-portfolio/static/media/BookStore.d58c60e0.PNG",
@@ -44,10 +44,10 @@
     "static/media/profile.a0cec62a.jpg": "/mk-portfolio/static/media/profile.a0cec62a.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.07d48634.js",
+    "static/js/runtime-main.24303b72.js",
     "static/css/2.19cefda3.chunk.css",
-    "static/js/2.862916ab.chunk.js",
-    "static/css/main.f314db88.chunk.css",
-    "static/js/main.f458ba9d.chunk.js"
+    "static/js/2.b33b2000.chunk.js",
+    "static/css/main.50b26760.chunk.css",
+    "static/js/main.36a48d85.chunk.js"
   ]
 }
