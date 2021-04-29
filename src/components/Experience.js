@@ -16,7 +16,7 @@ function Experience(){
                             
                             <strong>Software Developer</strong>  
                             <p className="exp-dur-font"><em>May 2020 ~ Aug 2020</em></p>
-                            <p className="exp-loc-font"><Icon.GeoAltFill/> 350-27 Gumi-daero Republic of Korea</p>            
+                            <p className="exp-loc-font"><Icon.GeoAltFill/> Seoul, Republic of Korea</p>            
                             <ul>
                                 <li>Successfully implemented RPA process for the application auto-execution on remote AGC production server using Microsoft Automation API, PsTools, and SQL</li>
                                 <li>Facilitated daily data export jobs by creating web automation tool using Selenium, C#, and xml</li>
